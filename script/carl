@@ -1,0 +1,6 @@
+#!perl
+use strict;
+use warnings;
+use Carl::CLI;
+
+Carl::CLI->new->run(@ARGV);

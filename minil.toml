@@ -1,0 +1,6 @@
+name = "Carl"
+# badges = ["travis"]
+authority="cpan:SKAJI"
+
+module_maker="ModuleBuildTiny"
+
