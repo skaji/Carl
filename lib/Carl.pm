@@ -65,7 +65,7 @@ Carl supports it!
 
 =head1 SEE ALSO
 
-Much code or architecture are stolen from Caron and Carmel.
+Much code or architecture are stolen from Carton and Carmel.
 
 L<Carton>
 

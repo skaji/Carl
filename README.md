@@ -48,7 +48,7 @@ Carl supports it!
 
 # SEE ALSO
 
-Much code or architecture are stolen from Caron and Carmel.
+Much code or architecture are stolen from Carton and Carmel.
 
 [Carton](https://metacpan.org/pod/Carton)
 
