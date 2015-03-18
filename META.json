@@ -49,6 +49,7 @@
             "Module::Metadata" : "0",
             "OrePAN2::Indexer" : "0",
             "OrePAN2::Injector" : "0",
+            "Perl::PrereqDistributionGatherer" : "0",
             "perl" : "5.008001"
          }
       },

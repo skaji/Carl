@@ -27,6 +27,8 @@ Carl is yet another Carton.
 - (2) so, when deployment, no need to install Carl itself, just cpanm
 - (3) support git/dist dependencies
 
+How does index.txt looks like? See [this](https://github.com/shoichikaji/Carl/blob/master/index.txt).
+
 Let me explain (3).
 Suppose you have the following cpanfile:
 
@@ -52,7 +54,7 @@ Much code or architecture are stolen from Carton and Carmel.
 
 [Carton](https://metacpan.org/pod/Carton)
 
-[https://github.com/miyagawa/Carmel](https://github.com/miyagawa/Carmel)
+[Carmel](https://github.com/miyagawa/Carmel)
 
 [App::cpanminus](https://metacpan.org/pod/App::cpanminus)
 
@@ -63,6 +65,8 @@ Much code or architecture are stolen from Carton and Carmel.
 [cpanfile](https://metacpan.org/pod/cpanfile)
 
 [https://speakerdeck.com/miyagawa/whats-new-in-carton-and-cpanm-at-yapc-asia-2013](https://speakerdeck.com/miyagawa/whats-new-in-carton-and-cpanm-at-yapc-asia-2013)
+
+[Perl::PrereqDistributionGatherer](https://github.com/shoichikaji/Perl-PrereqDistributionGatherer)
 
 # LICENSE
 

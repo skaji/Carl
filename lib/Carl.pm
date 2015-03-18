@@ -44,6 +44,8 @@ Carl is yet another Carton.
 
 =back
 
+How does index.txt looks like? See L<this|https://github.com/shoichikaji/Carl/blob/master/index.txt>.
+
 Let me explain (3).
 Suppose you have the following cpanfile:
 
@@ -69,7 +71,7 @@ Much code or architecture are stolen from Carton and Carmel.
 
 L<Carton>
 
-L<https://github.com/miyagawa/Carmel>
+L<Carmel|https://github.com/miyagawa/Carmel>
 
 L<App::cpanminus>
 
@@ -80,6 +82,8 @@ L<OrePAN2>
 L<cpanfile>
 
 L<https://speakerdeck.com/miyagawa/whats-new-in-carton-and-cpanm-at-yapc-asia-2013>
+
+L<Perl::PrereqDistributionGatherer|https://github.com/shoichikaji/Perl-PrereqDistributionGatherer>
 
 =head1 LICENSE
 

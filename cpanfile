@@ -7,6 +7,9 @@ requires 'Module::Metadata';
 requires 'OrePAN2::Indexer';
 requires 'OrePAN2::Injector';
 
+requires 'Perl::PrereqDistributionGatherer',
+    git => 'git://github.com/shoichikaji/Perl-PrereqDistributionGatherer.git';
+
 on test => sub {
     requires 'Test::More', '0.98';
 };

@@ -47,10 +47,15 @@ sub cmd_install {
     );
     $builder->install;
 
-    my $archlib = "local/lib/perl5/$Config{archname}";
-    my $indexer = Carl::Indexer->new(directory => $archlib);
-    open my $fh, ">", "index.txt" or die "Cannot open index.txt: $!";
+    my $indexer = Carl::Indexer->new(
+        directory => "local/lib/perl5",
+        cpanfile => "cpanfile",
+    );
+
+    open my $fh, ">", "index.txt.tmp" or die "Cannot open index.txt: $!";
     $indexer->write_index($fh);
+    unlink "index.txt";
+    rename "index.txt.tmp", "index.txt" or die "rename index.txt: $!";
 
     warn "Complete! Modules were installed to local, and wrote index.txt\n";
 }
