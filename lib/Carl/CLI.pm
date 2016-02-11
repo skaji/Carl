@@ -24,6 +24,8 @@ sub run {
     }
 }
 
+sub debug { $ENV{PERL_CARL_DEBUG} }
+
 sub cmd_help {
     exec "perldoc", "Carl";
     exit 255;
@@ -31,12 +33,12 @@ sub cmd_help {
 
 sub cmd_install {
     my $self = shift;
-    my $directory = File::Temp::tempdir(CLEANUP => !$self->{debug});
+    my $directory = File::Temp::tempdir(CLEANUP => !$self->debug);
 
     my $mirror = Carl::LocalMirror->new(
         directory => $directory,
         cpanfile => "cpanfile",
-        debug => $self->{debug},
+        debug => $self->debug,
     );
     my $setuped = $mirror->setup;
 
