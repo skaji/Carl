@@ -4,73 +4,63 @@
       "Shoichi Kaji <skaji@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.3.0, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.043, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Carl",
    "no_index" : {
       "directory" : [
-         "t",
-         "xt",
-         "inc",
-         "share",
          "eg",
          "examples",
-         "author",
-         "builder"
+         "inc",
+         "share",
+         "t",
+         "xt"
       ]
    },
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.035"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "develop" : {
          "requires" : {
-            "Test::CPAN::Meta" : "0",
-            "Test::MinimumVersion::Fast" : "0.04",
-            "Test::PAUSE::Permissions" : "0.04",
-            "Test::Pod" : "1.41",
-            "Test::Spellunker" : "v0.2.7"
+            "Dist::Milla" : "v1.0.15",
+            "Test::More" : "0.98",
+            "Test::Pod" : "1.41"
          }
       },
       "runtime" : {
          "requires" : {
             "App::cpanminus" : "0",
-            "Capture::Tiny" : "0",
+            "CPAN::Mirror::Tiny" : "0",
             "JSON::PP" : "0",
             "Module::CPANfile" : "0",
             "Module::Metadata" : "0",
-            "OrePAN2::Indexer" : "0",
-            "OrePAN2::Injector" : "0",
             "Perl::PrereqDistributionGatherer" : "0",
             "perl" : "5.008001"
          }
-      },
-      "test" : {
-         "requires" : {
-            "Test::More" : "0.98"
-         }
       }
    },
-   "release_status" : "unstable",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/shoichikaji/Carl/issues"
+         "web" : "https://github.com/skaji/Carl/issues"
       },
-      "homepage" : "https://github.com/shoichikaji/Carl",
+      "homepage" : "https://github.com/skaji/Carl",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/shoichikaji/Carl.git",
-         "web" : "https://github.com/shoichikaji/Carl"
+         "url" : "https://github.com/skaji/Carl.git",
+         "web" : "https://github.com/skaji/Carl"
       }
    },
    "version" : "0.01",
-   "x_authority" : "cpan:SKAJI"
+   "x_static_install" : "1"
 }
+

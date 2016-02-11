@@ -87,7 +87,7 @@ L<Perl::PrereqDistributionGatherer|https://github.com/shoichikaji/Perl-PrereqDis
 
 =head1 LICENSE
 
-Copyright (C) Shoichi Kaji.
+Copyright (C) 2016 Shoichi Kaji <skaji@cpan.org>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
