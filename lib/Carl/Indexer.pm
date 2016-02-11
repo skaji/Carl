@@ -50,14 +50,12 @@ EOF
 
 sub gather {
     my $self = shift;
-    my $gatherer = Perl::PrereqDistributionGatherer->new;
-    my ($dist, $core, $miss) = $gatherer->gather_from_cpanfile(
-        $self->{cpanfile}, inc => [
-            "$self->{directory}/$Config{archname}",
-            $self->{directory},
-            @Config{qw(privlibexp archlibexp)},
-        ],
-    );
+    my $gatherer = Perl::PrereqDistributionGatherer->new(inc => [
+        "$self->{directory}/$Config{archname}",
+        $self->{directory},
+        @Config{qw(privlibexp archlibexp)},
+    ]);
+    my ($dist, $core, $miss) = $gatherer->gather_from_cpanfile($self->{cpanfile});
     ($dist, $miss);
 }
 
