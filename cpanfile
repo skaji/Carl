@@ -8,6 +8,6 @@ requires 'CPAN::Mirror::Tiny';
 requires 'Perl::PrereqDistributionGatherer',
     git => 'git://github.com/shoichikaji/Perl-PrereqDistributionGatherer.git';
 
-on test => sub {
+on develop => sub {
     requires 'Test::More', '0.98';
 };

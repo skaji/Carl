@@ -70,7 +70,7 @@ Much code or architecture are stolen from Carton and Carmel.
 
 # LICENSE
 
-Copyright (C) Shoichi Kaji.
+Copyright (C) 2016 Shoichi Kaji &lt;skaji@cpan.org>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
