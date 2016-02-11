@@ -2,10 +2,8 @@ package Carl::LocalMirror;
 use 5.008001;
 use strict;
 use warnings;
-use OrePAN2::Injector;
-use OrePAN2::Indexer;
+use CPAN::Mirror::Tiny;
 use Module::CPANfile;
-use Capture::Tiny 'capture_merged';
 
 sub new {
     my ($class, %option) = @_;
@@ -41,14 +39,13 @@ sub setup {
 
     my $directory = $self->{directory};
     $self->debug("building local repository $directory");
-    my $injector = OrePAN2::Injector->new(directory => $directory);
+    my $cpan = CPAN::Mirror::Tiny->new(base => $directory);
     for my $module (@need_inject) {
         $self->debug("injecting $module->{module} from $module->{from}");
-        my $merged = capture_merged { $injector->inject($module->{from}) };
+        $cpan->inject($module->{from});
     }
-    my $indexer = OrePAN2::Indexer->new(directory => $directory);
     $self->debug("indexing $directory");
-    my $merged = capture_merged { $indexer->make_index( no_compress => 1 ) };
+    $cpan->write_index;
     return 1;
 }
 

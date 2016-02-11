@@ -77,4 +77,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-Shoichi Kaji <skaji@cpan.org>
+Shoichi Kaji &lt;skaji@cpan.org>

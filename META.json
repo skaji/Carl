@@ -4,7 +4,7 @@
       "Shoichi Kaji <skaji@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.3.0, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -43,12 +43,10 @@
       "runtime" : {
          "requires" : {
             "App::cpanminus" : "0",
-            "Capture::Tiny" : "0",
+            "CPAN::Mirror::Tiny" : "0",
             "JSON::PP" : "0",
             "Module::CPANfile" : "0",
             "Module::Metadata" : "0",
-            "OrePAN2::Indexer" : "0",
-            "OrePAN2::Injector" : "0",
             "Perl::PrereqDistributionGatherer" : "0",
             "perl" : "5.008001"
          }
@@ -62,15 +60,16 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/shoichikaji/Carl/issues"
+         "web" : "https://github.com/skaji/Carl/issues"
       },
-      "homepage" : "https://github.com/shoichikaji/Carl",
+      "homepage" : "https://github.com/skaji/Carl",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/shoichikaji/Carl.git",
-         "web" : "https://github.com/shoichikaji/Carl"
+         "url" : "git://github.com/skaji/Carl.git",
+         "web" : "https://github.com/skaji/Carl"
       }
    },
    "version" : "0.01",
-   "x_authority" : "cpan:SKAJI"
+   "x_authority" : "cpan:SKAJI",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }
